@@ -1,0 +1,78 @@
+/* 清默认边距 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  color: white;
+  text-align: center;
+  background-color: #72cadd;
+  font-size: 1.6rem;
+
+  & > p {
+    display: inline-block;
+  }
+  span {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    background-color: rgb(241, 116, 116);
+    margin-top: 0.8rem;
+  }
+  & > span:nth-of-type(1) {
+    float: left;
+    margin-left: 1rem;
+    background: url(../image/icon_arr_back.png) no-repeat;
+    background-size: contain;
+  }
+  & > span:nth-of-type(2) {
+    float: right;
+    margin-right: 1rem;
+    background: url(../image/icon_arr_more.png) no-repeat;
+    background-size: contain;
+    margin-top: 1rem;
+  }
+}
+
+/* 定义边框函数 */
+.borderBottom(@w:1px,@color:rgb(226, 223, 223)) {
+  border-bottom: @w solid @color;
+}
+main {
+  .time {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #f2f2f2;
+    line-height: 3.5rem;
+    font-size: 1.3rem;
+    color: rgb(80, 80, 80);
+    .borderBottom(2px,rgb(182, 178, 178));
+    text-indent: 1rem;
+  }
+
+  dl {
+    width: 97%;
+    .borderBottom;
+    margin: 0 auto;
+    height: 3rem;
+    line-height: 3rem;
+    color: gray;
+
+    dt {
+      width: 35%;
+      float: left;
+    }
+    dd {
+      width: 65%;
+      float: left;
+    }
+  }
+  .work {
+    height: 6rem;
+  }
+}
