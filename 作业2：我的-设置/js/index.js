@@ -21,3 +21,4 @@ function setRem() {
   }
 }
 window.onresize = setRem;
+window.onload = setRem;
