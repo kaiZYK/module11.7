@@ -22,6 +22,7 @@ header {
   left: 0px;
   z-index: 1;
   border: 1px solid #eaeaea;
+  background-color: #f2f2f2;
 }
 header a,
 header span {
