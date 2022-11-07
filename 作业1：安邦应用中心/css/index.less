@@ -1,0 +1,162 @@
+// 颜色
+@color-black: #222222;
+@color-blue: #0078ff;
+@color-gray: #666666;
+@bgc-gray: #f2f2f2;
+@bgc-white: #ffffff;
+// 边框
+.border(@width:1px, @style:solid, @color:#eaeaea) {
+  border: @width @style @color;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-size: 10px;
+  background-color: @bgc-gray;
+}
+
+/* 头部 */
+header {
+  width: 100%;
+  height: 4.6rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  .border;
+  a,
+  span {
+    font-size: 1.8rem;
+    line-height: 4.6rem;
+    color: @color-blue;
+    height: 100%;
+    display: block;
+    float: left;
+  }
+  a {
+    width: 4rem;
+    background: url(../image/icon_back.png) no-repeat 1.5rem 1.3rem;
+    background-size: 1.3rem;
+  }
+}
+/* 主要内容部分 */
+main {
+  width: 100%;
+  height: auto;
+  margin-top: 4.6rem;
+  background-color: @bgc-white;
+  .main-app {
+    width: 100%;
+    height: 11rem;
+    .border;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    img,
+    div {
+      float: left;
+    }
+    img {
+      width: 7.4rem;
+      height: 7.4rem;
+      display: block;
+    }
+    div {
+      height: 100%;
+      width: auto;
+      margin-left: 1.3rem;
+      color: @color-gray;
+      p:nth-of-type(1) {
+        font-size: 1.5rem;
+      }
+      p:nth-of-type(2) {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+    }
+    a {
+      width: 5rem;
+      height: 3rem;
+      display: block;
+      border-radius: 0.5rem;
+      color: @color-blue;
+      text-align: center;
+      line-height: 3rem;
+      font-size: 1.3rem;
+      .border(1px, solid, @color-blue);
+      float: right;
+      background-color: @bgc-white;
+      margin-top: 4.6rem;
+    }
+  }
+  .main-content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 2rem 1.2rem;
+    p:nth-of-type(1) {
+      font-size: 1.6rem;
+      color: @color-black;
+      margin-bottom: 1.5rem;
+    }
+    p:nth-of-type(2) {
+      font-size: 1.27rem;
+      color: @color-gray;
+      line-height: 2rem;
+    }
+  }
+}
+/* 底部 */
+footer {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  .border;
+  background-color: @bgc-white;
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 5rem;
+      height: 100%;
+      text-align: center;
+      &:nth-of-type(1) > a {
+        background-image: url(../image/btn_01-1.png);
+      }
+      &:nth-of-type(2) > a {
+        background-image: url(../image/btn_02.png);
+      }
+      &:nth-of-type(3) > a {
+        background-image: url(../image/btn_03.png);
+      }
+      a {
+        display: block;
+        height: 100%;
+        line-height: 8rem;
+        font-size: 1.2rem;
+        color: @color-gray;
+        background-repeat: no-repeat;
+        background-position: 12px 4px;
+        background-size: 2.6rem;
+      }
+    }
+  }
+}
+.active {
+  color: @color-blue;
+}
