@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-size: 10px;
+  background-color: #ffffff;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* 头部 */
+header {
+  width: 100%;
+  height: 6.5rem;
+  background-color: #72cadd;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  width: 6rem;
+  height: 100%;
+}
+header a:nth-of-type(1) {
+  background: url(../image/icon_arr_back.png) no-repeat 1.5rem 1.2rem;
+  background-size: 2rem;
+}
+header a:nth-of-type(2) {
+  background: url(../image/icon_arr_more.png) no-repeat 0rem 1.8rem;
+  background-size: 3.5rem;
+}
+header p {
+  width: auto;
+  height: 100%;
+  line-height: 6.5rem;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+/* 标题部分 */
+.title {
+  width: 100%;
+  height: 6rem;
+  margin-top: 6.5rem;
+  background-color: #eeeeee;
+  border-bottom: 0.2rem solid #b6b2b2;
+  font-size: 2rem;
+  color: #505050;
+  line-height: 6rem;
+  text-indent: 1.5rem;
+}
+/* 主要内容部分 */
+main {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0rem 0.8rem;
+}
+main dl {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1px solid #e9e6e6;
+  margin: 0 auto;
+}
+main dl dt,
+main dl dd {
+  float: left;
+  height: auto;
+  font-size: 1.6rem;
+  color: #808080;
+  line-height: 4.7rem;
+}
+main dl dt {
+  width: 35%;
+}
+main dl dd {
+  width: 65%;
+}

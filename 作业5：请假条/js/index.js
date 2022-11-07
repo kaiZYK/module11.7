@@ -13,7 +13,6 @@ function setRem() {
       document.documentElement.clientWidth || document.body.clientWidth;
     html_.style.fontSize = (cl_w / ui_w) * 10 + "px";
     body_.style.fontSize = (cl_w / ui_w) * 10 + "px";
-    console.log(cl_w);
     // 节流阀打开
     setTimeout(function () {
       flg = true;
