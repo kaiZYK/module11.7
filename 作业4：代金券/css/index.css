@@ -130,7 +130,7 @@ main ul li .main-bottom span:nth-of-type(2) {
 main ul li .border-top,
 main ul li .border-bottom {
   width: 100%;
-  height: 0.6rem;
+  height: 0.5rem;
   position: absolute;
   background-image: url(../images/border.png);
   left: 0;
